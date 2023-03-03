@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+h1, h2 {
+  text-transform: uppercase;
+}
+
+/* Add padding to all of the .container child elements */
+.container > * {
+  padding: 20px;
+}
+.container {
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+header {
+  background: skyblue;
+  grid-column: 1 / 13;
+order: 1;
+
+}
+main {
+  background: slategray;
+  grid-column: 4 / 10;
+order: 3;
+}
+nav {
+  background: cadetblue;
+  grid-column: 1 / 4;
+order: 2;
+}
+aside {
+  background: seagreen;
+  grid-column: 10 / 13;
+order: 4;
+}
+/* main, nav, aside {
+  grid-row: 2 / 4;
+} */
+footer {
+  background: darkslateblue;
+  grid-column: 1 / 13;
+order: 5;
+}
