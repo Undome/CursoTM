@@ -37,64 +37,59 @@
 		
 		<!-- Sección de Productos -->
 		<section id="Productos">
-		<h2>Productos</h2> 
-			<!-- Caja principal para realizar las diversas cajas -->
-			<div> <!-- Contenedor 1 producto 1 -->
-				<div> <!-- row -->
-					<div> <!-- columna 1 -->
-						<img src="Imagenes/producto1.JPG" alt=""> <!-- imagen del producto -->
-					</div>
-					<div> <!-- columna 2 -->
-						<h3></h3> <!-- nombre del producto -->
-						<p></p> <!-- descripción -->
-						<p></p> <!--precio -->
-						<button type="button">Agregar al carrito</button>
-					</div>
+			<h2>Productos</h2>
+			<div> <!-- Caja principal para realizar las diversas cajas -->
+				<div> <!-- Contenedor 1 producto 1 -->
+						<div> <!-- columna 1 -->
+							<img src="Imagenes/producto1.JPG" alt=""> <!-- imagen del producto -->
+						</div>
+						<div> <!-- columna 2 -->
+							<h3></h3> <!-- nombre del producto -->
+							<p></p> <!-- descripción -->
+							<p></p> <!--precio -->
+							<button type="button">Agregar al carrito</button>
+						</div>
 				</div>
-			</div>
-			
-			<div> <!-- Contenedor 2 productos 2 y 3-->
-				<div> <!-- row -->
-					<div> <!-- columna 1 -->
-						<img src="Imagenes/producto2.JPG" alt=""> <!-- imagen del producto -->
-						<h3></h3> <!-- nombre del producto -->
-						<p></p> <!-- descripción -->
-						<p></p> <!--precio -->
-						<button type="button">Agregar al carrito</button>
-					</div>
-					<div> <!-- columna 2 -->
-						<img src="Imagenes/producto3.JPG" alt=""> <!-- imagen del producto -->
-						<h3></h3> <!-- nombre del producto -->
-						<p></p> <!-- descripción -->
-						<p></p> <!--precio -->
-						<button type="button">Agregar al carrito</button>
-					</div>
+				
+				<div class="flexbox-container"> <!-- Contenedor 2 productos 2 y 3-->
+						<div> <!-- columna 1 -->
+							<img src="Imagenes/producto2.JPG" alt=""> <!-- imagen del producto -->
+							<h3></h3> <!-- nombre del producto -->
+							<p></p> <!-- descripción -->
+							<p></p> <!--precio -->
+							<button type="button">Agregar al carrito</button>
+						</div>
+						<div> <!-- columna 2 -->
+							<img src="Imagenes/producto3.JPG" alt=""> <!-- imagen del producto -->
+							<h3></h3> <!-- nombre del producto -->
+							<p></p> <!-- descripción -->
+							<p></p> <!--precio -->
+							<button type="button">Agregar al carrito</button>
+						</div>
 				</div>
-			</div>
-			
-			<div> <!-- Contenedor 3 productos 4, 5 y 6-->
-				<div> <!-- row -->
-					<div> <!-- columna 1 -->
-						<img src="Imagenes/producto4.JPG" alt=""> <!-- imagen del producto -->
-						<h3></h3> <!-- nombre del producto -->
-						<p></p> <!-- descripción -->
-						<p></p> <!--precio -->
-						<button type="button">Agregar al carrito</button>
-					</div>
-					<div> <!-- columna 2 -->
-						<img src="Imagenes/producto5.JPG" alt=""> <!-- imagen del producto -->
-						<h3></h3> <!-- nombre del producto -->
-						<p></p> <!-- descripción -->
-						<p></p> <!--precio -->
-						<button type="button">Agregar al carrito</button>
-					</div>
-					<div> <!-- columna 3 -->
-						<img src="Imagenes/producto6.JPG" alt=""> <!-- imagen del producto -->
-						<h3></h3> <!-- nombre del producto -->
-						<p></p> <!-- descripción -->
-						<p></p> <!--precio -->
-						<button type="button">Agregar al carrito</button>
-					</div>
+				
+				<div class="flexbox-container"> <!-- Contenedor 3 productos 4, 5 y 6-->
+						<div> <!-- columna 1 -->
+							<img src="Imagenes/producto4.JPG" alt=""> <!-- imagen del producto -->
+							<h3></h3> <!-- nombre del producto -->
+							<p></p> <!-- descripción -->
+							<p></p> <!--precio -->
+							<button type="button">Agregar al carrito</button>
+						</div>
+						<div> <!-- columna 2 -->
+							<img src="Imagenes/producto5.JPG" alt=""> <!-- imagen del producto -->
+							<h3></h3> <!-- nombre del producto -->
+							<p></p> <!-- descripción -->
+							<p></p> <!--precio -->
+							<button type="button">Agregar al carrito</button>
+						</div>
+						<div> <!-- columna 3 -->
+							<img src="Imagenes/producto6.JPG" alt=""> <!-- imagen del producto -->
+							<h3></h3> <!-- nombre del producto -->
+							<p></p> <!-- descripción -->
+							<p></p> <!--precio -->
+							<button type="button">Agregar al carrito</button>
+						</div>
 				</div>
 			</div>
 		</section>
@@ -104,16 +99,16 @@
 			<h2>Catergorías de productos</h2>
 			<!-- Caja principal para realizar las diversas cajas -->			
 			<div> <!-- Contenedor 1 -->
-				<div> <!-- Row -->
-					<div> <!-- Columna 1 -->
+				<div class="flexbox-container"> <!-- Row -->
+					<div class="columna"> <!-- Columna 1 -->
 						<img src="" alt="">
 						<p>Oficina</p>
 					</div>
-					<div> <!-- Columna 2 -->
+					<div class="columna"> <!-- Columna 2 -->
 						<img src="" alt="">
 						<p>Hogar</p>
 					</div>
-					<div> <!-- Columna 3 -->
+					<div class="columna"> <!-- Columna 3 -->
 						<img src="" alt="">
 						<p>Cocina</p>
 					</div>
@@ -122,43 +117,40 @@
 		</section>
 		
 		<footer>
-			<div>
+			<div class="flexbox-container">
 				<div>
+					<h3>Categorias</h3>
 					<div>
-						<h3>Categorias</h3>
-						<div>
-							<ul>
-								<li><a href="">Cocina</a></li>
-								<li><a href="">Oficina</a></li>
-								<li><a href="">Jardín</a></li>
-								<li><a href="">Cochera</a></li>
-								<li><a href="">Dormitorios</a></li>
-							</ul>
-						</div>
+						<ul>
+							<li><a href="">Cocina</a></li>
+							<li><a href="">Oficina</a></li>
+							<li><a href="">Jardín</a></li>
+							<li><a href="">Cochera</a></li>
+							<li><a href="">Dormitorios</a></li>
+						</ul>
 					</div>
+				</div>
+				<div>
+					<h3>Sobre nosotros</h3>
 					<div>
-						<h3>Sobre nosotros</h3>
-						<div>
-							<ul>
-								<li><a href="">Nuestra Historia</a></li>
-								<li><a href="">Misión</a></li>
-								<li><a href="">Visión</a></li>
-								<li><a href="">Carreras</a></li>
-								<li><a href="">Políticas de privacidad</a></li>
-								<li><a href="">Terminos del servicio</a></li>
-							</ul>
-						</div>
+						<ul>
+							<li><a href="">Nuestra Historia</a></li>
+							<li><a href="">Misión</a></li>
+							<li><a href="">Visión</a></li>
+							<li><a href="">Carreras</a></li>
+							<li><a href="">Políticas de privacidad</a></li>
+							<li><a href="">Terminos del servicio</a></li>
+						</ul>
 					</div>
+				</div>
+				<div>
+					<h3>Soporte</h3>
 					<div>
-						<h3>Soporte</h3>
-						<div>
-							<ul>
-								<li><a href="">Preguntas frecuentes</a></li>
-								<li><a href="">Ayuda en línea</a></li>
-								<li><a href="">Confianza y seguridad</a></li>
-							</ul>
-						</div>
-					</div>
+						<ul>
+							<li><a href="">Preguntas frecuentes</a></li>
+							<li><a href="">Ayuda en línea</a></li>
+							<li><a href="">Confianza y seguridad</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>

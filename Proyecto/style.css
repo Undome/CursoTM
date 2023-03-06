@@ -1,5 +1,5 @@
 body {
-	font-size: 62.5px;
+	/*font-size: 62.5px;*/
 	font-family: "Raleway";
 	}
 h1 {
@@ -25,3 +25,12 @@ h3 {
 	/* Barra de navegación */
 				
 	}
+.columna {
+	border: solid;
+}
+.flexbox-container{
+	display: flex;
+}
+#Categorías {
+	display: flex;
+}
