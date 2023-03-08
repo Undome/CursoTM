@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .encabezado {
+            font-size: 40px;
+            font-weight: bold;
+            color: green;
+        }
+        @media screen and (max-width:800px) {
+           body {
+            text-align: center;
+            background-color: green;
+           } 
+           .encabezado {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+           }
+           .detalle {
+            color: white;
+           }
+        }
+        @media screen and (max-width:500px) {
+           body {
+            text-align: center;
+            background-color: blue;
+           } 
+        }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        Responsive Web Page
+    </div>
+    <div class="detalle">
+        Una forma de escribir paginas web
+    </div>
+</body>
+</html>

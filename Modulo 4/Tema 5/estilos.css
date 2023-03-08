@@ -1,0 +1,13 @@
+div {
+    background-color: darkcyan;
+    padding: 10px;
+}
+.texto {
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:480px) {
+    div {
+        background-color: darkred;
+    }
+}
