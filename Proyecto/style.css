@@ -5,32 +5,81 @@ body {
 h1 {
 	font-size: 5rem;
 	font-family: "Playfair";
+	text-align: center;
 	}
 h2 {
 	font-size: 4rem;
 	font-family: "Playfair";
+	text-align: center;
 	}
 h3 {
 	font-size: 4rem;
 	font-family: "Playfair";
+	}
+footer {
+	margin: 10px 2.5% 0 2.5%
+	}
+footer div {
+	
+	}
+section {
+	margin: 2.5% 10px 2.5% 10px;
+	}
+nav {
+	background-color: #037BC0;
 	}
 .mueble {
 	color: #037BC0;
 	}
 .imagen {
 	/* Poner imagenes a 1.6rem */
-				
+	max-width: 70%;
 	}
 .hero {
-	/* Barra de navegación */
-				
+	background-image: url("Imagenes/principal.JPG");
+	height: 25rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:contain;
 	}
-.columna {
+.box {
 	border: solid;
-}
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
 .flexbox-container{
 	display: flex;
-}
+	justify-content: center;	
+	}
+.nav-links {
+	display: flex;
+	}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+.nav-item {
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+	}
+.nav-item a {
+	color: white;
+	}
+	.white {
+	color: white;	
+	}
 #Categorías {
 	display: flex;
-}
+	}
+#Productos1 div {
+	max-width: 50%;
+	}
+#Productos2 div {
+	max-width: 50%;
+	}
+#Productos3 div {
+	max-width: 33%;
+	}

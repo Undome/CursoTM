@@ -13,79 +13,82 @@
 	</head>
 	<body>
 		<header>
-			<h1>Tienda de <span>Muebles</span></h1>
+			<h1>Tienda de <span class="mueble">Muebles</span></h1>
 		</header>
 		
 		<!-- Barra de navegación -->
 		<section id="navbar">
-			<nav>
-				<ul>
-					<li><a href="">Inicio</a></li>
-					<li><a href="">Nosotros</a></li>
-					<li><a href="">Tienda</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Galería</a></li>
-					<li><a href="">Contactos</a></li>
+			<nav class="navbar">
+				<a href="" class="white">Muebles</a>
+				<ul class="nav-links">
+					<li class="nav-item"><a href="">Inicio</a></li>
+					<li class="nav-item"><a href="">Nosotros</a></li>
+					<li class="nav-item"><a href="">Tienda</a></li>
+					<li class="nav-item"><a href="">Blog</a></li>
+					<li class="nav-item"><a href="">Galería</a></li>
+					<li class="nav-item"><a href="">Contactos</a></li>
 				</ul>
 			</nav>
 		</section>
 		
 		<!-- Sección de Hero -->
 		<section id="Hero">
-		
+			<div class="hero">
+			
+			</div>
 		</section>
 		
 		<!-- Sección de Productos -->
 		<section id="Productos">
 			<h2>Productos</h2>
 			<div> <!-- Caja principal para realizar las diversas cajas -->
-				<div> <!-- Contenedor 1 producto 1 -->
-						<div> <!-- columna 1 -->
-							<img src="Imagenes/producto1.JPG" alt=""> <!-- imagen del producto -->
+				<div id="Productos1" class="flexbox-container"> <!-- Contenedor 1 producto 1 -->
+						<div class="box"> <!-- columna 1 -->
+							<img src="Imagenes/producto1.JPG" alt="" class="imagen"> <!-- imagen del producto -->
 						</div>
-						<div> <!-- columna 2 -->
-							<h3></h3> <!-- nombre del producto -->
+						<div class="box"> <!-- columna 2 -->
+							<h3>Producto 1</h3> <!-- nombre del producto -->
 							<p></p> <!-- descripción -->
 							<p></p> <!--precio -->
 							<button type="button">Agregar al carrito</button>
 						</div>
 				</div>
 				
-				<div class="flexbox-container"> <!-- Contenedor 2 productos 2 y 3-->
-						<div> <!-- columna 1 -->
-							<img src="Imagenes/producto2.JPG" alt=""> <!-- imagen del producto -->
-							<h3></h3> <!-- nombre del producto -->
+				<div id="Productos2" class="flexbox-container"> <!-- Contenedor 2 productos 2 y 3-->
+						<div class="box"> <!-- columna 1 -->
+							<img src="Imagenes/producto2.JPG" alt="" class="imagen"> <!-- imagen del producto -->
+							<h3>Producto 2</h3> <!-- nombre del producto -->
 							<p></p> <!-- descripción -->
 							<p></p> <!--precio -->
 							<button type="button">Agregar al carrito</button>
 						</div>
-						<div> <!-- columna 2 -->
-							<img src="Imagenes/producto3.JPG" alt=""> <!-- imagen del producto -->
-							<h3></h3> <!-- nombre del producto -->
+						<div class="box"> <!-- columna 2 -->
+							<img src="Imagenes/producto3.JPG" alt="" class="imagen"> <!-- imagen del producto -->
+							<h3>Producto 3</h3> <!-- nombre del producto -->
 							<p></p> <!-- descripción -->
 							<p></p> <!--precio -->
 							<button type="button">Agregar al carrito</button>
 						</div>
 				</div>
 				
-				<div class="flexbox-container"> <!-- Contenedor 3 productos 4, 5 y 6-->
-						<div> <!-- columna 1 -->
-							<img src="Imagenes/producto4.JPG" alt=""> <!-- imagen del producto -->
-							<h3></h3> <!-- nombre del producto -->
+				<div id="Productos3" class="flexbox-container"> <!-- Contenedor 3 productos 4, 5 y 6-->
+						<div class="box"> <!-- columna 1 -->
+							<img src="Imagenes/producto4.JPG" alt="" class="imagen"> <!-- imagen del producto -->
+							<h3>Producto 4</h3> <!-- nombre del producto -->
 							<p></p> <!-- descripción -->
 							<p></p> <!--precio -->
 							<button type="button">Agregar al carrito</button>
 						</div>
-						<div> <!-- columna 2 -->
-							<img src="Imagenes/producto5.JPG" alt=""> <!-- imagen del producto -->
-							<h3></h3> <!-- nombre del producto -->
+						<div class="box"> <!-- columna 2 -->
+							<img src="Imagenes/producto5.JPG" alt="" class="imagen"> <!-- imagen del producto -->
+							<h3>Producto 5</h3> <!-- nombre del producto -->
 							<p></p> <!-- descripción -->
 							<p></p> <!--precio -->
 							<button type="button">Agregar al carrito</button>
 						</div>
-						<div> <!-- columna 3 -->
-							<img src="Imagenes/producto6.JPG" alt=""> <!-- imagen del producto -->
-							<h3></h3> <!-- nombre del producto -->
+						<div class="box"> <!-- columna 3 -->
+							<img src="Imagenes/producto6.JPG" alt="" class="imagen"> <!-- imagen del producto -->
+							<h3>Producto 6</h3> <!-- nombre del producto -->
 							<p></p> <!-- descripción -->
 							<p></p> <!--precio -->
 							<button type="button">Agregar al carrito</button>
@@ -100,16 +103,16 @@
 			<!-- Caja principal para realizar las diversas cajas -->			
 			<div> <!-- Contenedor 1 -->
 				<div class="flexbox-container"> <!-- Row -->
-					<div class="columna"> <!-- Columna 1 -->
-						<img src="" alt="">
+					<div class="box"> <!-- Columna 1 -->
+						<img src="Imagenes/categoria1.JPG" alt="" class="imagen">
 						<p>Oficina</p>
 					</div>
-					<div class="columna"> <!-- Columna 2 -->
-						<img src="" alt="">
+					<div class="box"> <!-- Columna 2 -->
+						<img src="Imagenes/categoria2.JPG" alt="" class="imagen">
 						<p>Hogar</p>
 					</div>
-					<div class="columna"> <!-- Columna 3 -->
-						<img src="" alt="">
+					<div class="box"> <!-- Columna 3 -->
+						<img src="Imagenes/categoria3.JPG" alt="" class="imagen">
 						<p>Cocina</p>
 					</div>
 				</div>
