@@ -1,0 +1,29 @@
+#contenedor {
+    font-size: 30px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+#contenedor > *{
+    background-color: brown;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    grid-column: 1 / span 3;
+}
+@media all and (max-width:600px) {
+    aside, article {
+        grid-column: 1 / span 3;
+    }
+    #contenedor {
+        grid-template-rows: repeat(5,100px);
+    }
+}
