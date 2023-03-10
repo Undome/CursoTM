@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <h1 class="text-danger">Viewport Breakpoints</h1>
+
+    <h4 class="text-secondary">Show until Viewport</h4>
+    
+    <div class="d-grid gap-2">
+      <span class="d-block d-sm-none bg-primary text-white ">Until xs</span>
+      <span class="d-block d-md-none bg-success text-white ">Until md</span>
+      <span class="d-block d-lg-none bg-danger text-white ">Until lg</span>
+      <span class="d-block d-xl-none bg-warning text-white ">Until xl</span>
+      <span class="d-block d-xxl-none bg-info text-white ">Until xxl</span>
+    </div>
+    
+    <hr> 
+    <h4 class="text-secondary">Show after Viewport</h4>
+    
+    <div class="d-grid gap-2">
+      <span class="d-none d-sm-block bg-primary text-white ">Only after xs</span>
+      <span class="d-none d-md-block bg-success text-white ">Only after md</span>
+      <span class="d-none d-lg-block bg-danger text-white ">Only after lg</span>
+      <span class="d-none d-xl-block bg-warning text-white ">Only after xl</span>
+      <span class="d-none d-xxl-block bg-info text-white ">Only after xxl</span>
+    </div>
+    
+    <hr> 
+    
+    <h4 class="text-secondary">Show ONLY in Viewport</h4>
+    
+    <div class="d-grid gap-2">
+      <span class="d-block d-sm-none bg-secondary text-white ">Only on sm</span>
+      <span class="d-none d-sm-block d-md-none bg-primary text-white ">Only on sm</span>
+      <span class="d-none d-md-block d-lg-none bg-success text-white ">Only on md</span>
+      <span class="d-none d-lg-block d-xl-none bg-danger text-white ">Only on lg</span>
+      <span class="d-none d-xl-block d-xxl-none bg-warning text-white ">Only on xl</span>
+      <span class="d-none d-xxl-block bg-info text-white ">Only on xxl</span>
+    </div>
+
+  </body>
+</html>
