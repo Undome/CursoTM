@@ -9,6 +9,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -18,16 +19,35 @@
 		
 		<!-- Barra de navegación -->
 		<section id="navbar">
-			<nav class="navbar">
-				<a href="" class="white">Muebles</a>
-				<ul class="nav-links">
-					<li class="nav-item"><a href="">Inicio</a></li>
-					<li class="nav-item"><a href="">Nosotros</a></li>
-					<li class="nav-item"><a href="">Tienda</a></li>
-					<li class="nav-item"><a href="">Blog</a></li>
-					<li class="nav-item"><a href="">Galería</a></li>
-					<li class="nav-item"><a href="">Contactos</a></li>
-				</ul>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			  <div class="container-fluid">
+				<a class="navbar-brand" href="#">Muebles</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item text-light">
+					  <a class="nav-link" href="#">Nosotros</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Tienda</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Galeria</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Contactos</a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
 			</nav>
 		</section>
 		
@@ -42,56 +62,56 @@
 		<section id="Productos">
 			<h2>Productos</h2>
 			<div> <!-- Caja principal para realizar las diversas cajas -->
-				<div id="Productos1" class="flexbox-container"> <!-- Contenedor 1 producto 1 -->
-						<div class="box"> <!-- columna 1 -->
+				<div id="Productos1" class="flexbox-container box"> <!-- Contenedor 1 producto 1 -->
+						<div class=""> <!-- columna 1 -->
 							<img src="Imagenes/producto1.JPG" alt="" class="imagen"> <!-- imagen del producto -->
 						</div>
-						<div class="box"> <!-- columna 2 -->
+						<div class="p-bg"> <!-- columna 2 -->
 							<h3>Producto 1</h3> <!-- nombre del producto -->
-							<p></p> <!-- descripción -->
-							<p></p> <!--precio -->
-							<button type="button">Agregar al carrito</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae interdum quam. Donec porttitor tempus luctus. Aliquam tincidunt finibus leo. In at varius neque, vitae dapibus nunc. Duis sed magna dolor. Cras tempor, ex eget mollis accumsan, ipsum magna consectetur augue, quis egestas ex enim ut nisl. Curabitur blandit luctus tellus, non pulvinar nisl elementum eu. </p> <!-- descripción -->
+							<p>$7,000.00</p> <!--precio -->
+							<button type="button" class="g-bg">Agregar al carrito</button>
 						</div>
 				</div>
 				
 				<div id="Productos2" class="flexbox-container"> <!-- Contenedor 2 productos 2 y 3-->
-						<div class="box"> <!-- columna 1 -->
-							<img src="Imagenes/producto2.JPG" alt="" class="imagen"> <!-- imagen del producto -->
+						<div class="box p-bg"> <!-- columna 1 -->
+							<img src="Imagenes/producto2.JPG" alt="" class="imagen"> <!-- imagen del producto -->	
 							<h3>Producto 2</h3> <!-- nombre del producto -->
-							<p></p> <!-- descripción -->
-							<p></p> <!--precio -->
-							<button type="button">Agregar al carrito</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae interdum quam. Donec porttitor tempus luctus. Aliquam tincidunt finibus leo. In at varius neque, vitae dapibus nunc. Duis sed magna dolor. Cras tempor, ex eget mollis accumsan, ipsum magna consectetur augue, quis egestas ex enim ut nisl. Curabitur blandit luctus tellus, non pulvinar nisl elementum eu. </p> <!-- descripción -->
+							<p>$5,000.00</p> <!--precio -->
+							<button type="button" class="g-bg">Agregar al carrito</button>
 						</div>
-						<div class="box"> <!-- columna 2 -->
+						<div class="box p-bg"> <!-- columna 2 -->
 							<img src="Imagenes/producto3.JPG" alt="" class="imagen"> <!-- imagen del producto -->
 							<h3>Producto 3</h3> <!-- nombre del producto -->
-							<p></p> <!-- descripción -->
-							<p></p> <!--precio -->
-							<button type="button">Agregar al carrito</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae interdum quam. Donec porttitor tempus luctus. Aliquam tincidunt finibus leo. In at varius neque, vitae dapibus nunc. Duis sed magna dolor. Cras tempor, ex eget mollis accumsan, ipsum magna consectetur augue, quis egestas ex enim ut nisl. Curabitur blandit luctus tellus, non pulvinar nisl elementum eu. </p> <!-- descripción -->
+							<p>$3,000.00</p> <!--precio -->
+							<button type="button" class="g-bg">Agregar al carrito</button>
 						</div>
 				</div>
 				
 				<div id="Productos3" class="flexbox-container"> <!-- Contenedor 3 productos 4, 5 y 6-->
-						<div class="box"> <!-- columna 1 -->
+						<div class="box p-bg"> <!-- columna 1 -->
 							<img src="Imagenes/producto4.JPG" alt="" class="imagen"> <!-- imagen del producto -->
 							<h3>Producto 4</h3> <!-- nombre del producto -->
-							<p></p> <!-- descripción -->
-							<p></p> <!--precio -->
-							<button type="button">Agregar al carrito</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae interdum quam. Donec porttitor tempus luctus. Aliquam tincidunt finibus leo. In at varius neque, vitae dapibus nunc. Duis sed magna dolor. Cras tempor, ex eget mollis accumsan, ipsum magna consectetur augue, quis egestas ex enim ut nisl. Curabitur blandit luctus tellus, non pulvinar nisl elementum eu. </p> <!-- descripción -->
+							<p>$1,500.00</p> <!--precio -->
+							<button type="button" class="g-bg">Agregar al carrito</button>
 						</div>
-						<div class="box"> <!-- columna 2 -->
+						<div class="box p-bg"> <!-- columna 2 -->
 							<img src="Imagenes/producto5.JPG" alt="" class="imagen"> <!-- imagen del producto -->
 							<h3>Producto 5</h3> <!-- nombre del producto -->
-							<p></p> <!-- descripción -->
-							<p></p> <!--precio -->
-							<button type="button">Agregar al carrito</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae interdum quam. Donec porttitor tempus luctus. Aliquam tincidunt finibus leo. In at varius neque, vitae dapibus nunc. Duis sed magna dolor. Cras tempor, ex eget mollis accumsan, ipsum magna consectetur augue, quis egestas ex enim ut nisl. Curabitur blandit luctus tellus, non pulvinar nisl elementum eu. </p> <!-- descripción -->
+							<p>$1,000.00</p> <!--precio -->
+							<button type="button" class="g-bg">Agregar al carrito</button>
 						</div>
-						<div class="box"> <!-- columna 3 -->
+						<div class="box p-bg"> <!-- columna 3 -->
 							<img src="Imagenes/producto6.JPG" alt="" class="imagen"> <!-- imagen del producto -->
 							<h3>Producto 6</h3> <!-- nombre del producto -->
-							<p></p> <!-- descripción -->
-							<p></p> <!--precio -->
-							<button type="button">Agregar al carrito</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae interdum quam. Donec porttitor tempus luctus. Aliquam tincidunt finibus leo. In at varius neque, vitae dapibus nunc. Duis sed magna dolor. Cras tempor, ex eget mollis accumsan, ipsum magna consectetur augue, quis egestas ex enim ut nisl. Curabitur blandit luctus tellus, non pulvinar nisl elementum eu. </p> <!-- descripción -->
+							<p>$500.00</p> <!--precio -->
+							<button type="button" class="g-bg">Agregar al carrito</button>
 						</div>
 				</div>
 			</div>
@@ -101,62 +121,63 @@
 		<section id="Categorías">
 			<h2>Catergorías de productos</h2>
 			<!-- Caja principal para realizar las diversas cajas -->			
-			<div> <!-- Contenedor 1 -->
-				<div class="flexbox-container"> <!-- Row -->
-					<div class="box"> <!-- Columna 1 -->
-						<img src="Imagenes/categoria1.JPG" alt="" class="imagen">
-						<p>Oficina</p>
-					</div>
-					<div class="box"> <!-- Columna 2 -->
-						<img src="Imagenes/categoria2.JPG" alt="" class="imagen">
-						<p>Hogar</p>
-					</div>
-					<div class="box"> <!-- Columna 3 -->
-						<img src="Imagenes/categoria3.JPG" alt="" class="imagen">
-						<p>Cocina</p>
-					</div>
+			<div class="flexbox-container"> <!-- Contenedor 1 producto 1 -->
+				<div class="custom"> <!-- Columna 1 -->
+					<img src="Imagenes/categoria1.JPG" alt="" class="imagen">
+					<br>
+					<a class="text-decoration-none" href="#">Oficina</a>
+				</div>
+				<div class="custom"> <!-- Columna 2 -->
+					<img src="Imagenes/categoria2.JPG" alt="" class="imagen">
+					<br>
+					<a class="text-decoration-none" href="#">Hogar</a>					</div>
+				<div class="custom"> <!-- Columna 3 -->
+					<img src="Imagenes/categoria3.JPG" alt="" class="imagen">
+					<br>
+					<a class="text-decoration-none" href="#">Cocina</a>
 				</div>
 			</div>
 		</section>
 		
 		<footer>
 			<div class="flexbox-container">
-				<div>
+				<div class="footer-div container-xl">
 					<h3>Categorias</h3>
 					<div>
 						<ul>
-							<li><a href="">Cocina</a></li>
-							<li><a href="">Oficina</a></li>
-							<li><a href="">Jardín</a></li>
-							<li><a href="">Cochera</a></li>
-							<li><a href="">Dormitorios</a></li>
+							<li><a class="text-decoration-none" href="">Cocina</a></li>
+							<li><a class="text-decoration-none" href="">Oficina</a></li>
+							<li><a class="text-decoration-none" href="">Jardín</a></li>
+							<li><a class="text-decoration-none" href="">Cochera</a></li>
+							<li><a class="text-decoration-none" href="">Dormitorios</a></li>
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div class="footer-div container-xl">
 					<h3>Sobre nosotros</h3>
 					<div>
 						<ul>
-							<li><a href="">Nuestra Historia</a></li>
-							<li><a href="">Misión</a></li>
-							<li><a href="">Visión</a></li>
-							<li><a href="">Carreras</a></li>
-							<li><a href="">Políticas de privacidad</a></li>
-							<li><a href="">Terminos del servicio</a></li>
+							<li><a class="text-decoration-none" href="">Nuestra Historia</a></li>
+							<li><a class="text-decoration-none" href="">Misión</a></li>
+							<li><a class="text-decoration-none" href="">Visión</a></li>
+							<li><a class="text-decoration-none" href="">Carreras</a></li>
+							<li><a class="text-decoration-none" href="">Políticas de privacidad</a></li>
+							<li><a class="text-decoration-none" href="">Terminos del servicio</a></li>
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div class="footer-div container-xl">
 					<h3>Soporte</h3>
 					<div>
 						<ul>
-							<li><a href="">Preguntas frecuentes</a></li>
-							<li><a href="">Ayuda en línea</a></li>
-							<li><a href="">Confianza y seguridad</a></li>
+							<li><a class="text-decoration-none" href="">Preguntas frecuentes</a></li>
+							<li><a class="text-decoration-none" href="">Ayuda en línea</a></li>
+							<li><a class="text-decoration-none" href="">Confianza y seguridad</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 </html>

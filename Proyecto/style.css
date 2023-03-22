@@ -1,3 +1,9 @@
+html {
+	box-sizing: border-box;
+	}
+*, *:before, *:after{
+	box-sizing: inherit;
+	}
 body {
 	/*font-size: 62.5px;*/
 	font-family: "Raleway";
@@ -19,6 +25,9 @@ h3 {
 footer {
 	margin: 10px 2.5% 0 2.5%
 	}
+footer div {
+	
+	}
 section {
 	margin: 2.5% 10px 2.5% 10px;
 	}
@@ -31,6 +40,7 @@ nav {
 .imagen {
 	/* Poner imagenes a 1.6rem */
 	max-width: 70%;
+	border-radius: 30px;
 	}
 .hero {
 	background-image: url("Imagenes/principal.JPG");
@@ -44,12 +54,15 @@ nav {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 30px;
 	}
 .flexbox-container{
 	display: flex;
 	justify-content: center;	
 	}
-.nav-links {
+/*.nav-links {
 	display: flex;
 	}
 .navbar{
@@ -64,9 +77,26 @@ nav {
 	}
 .nav-item a {
 	color: white;
-	}
-	.white {
+	}*/
+.white {
 	color: white;	
+	}
+.p-bg {
+	background-color: #037BC0;
+	color: white;
+	border-radius: 30px;
+	}
+.g-bg {
+	background-color: #8CBC00;
+	color: white;
+	border-radius: 30px;
+	}
+.footer-div {
+	margin:0 auto;
+	border-radius: 30px;
+	}
+div.custom:hover {
+	transform: scale(1.2);
 	}
 #Categorías {
 	display: flex;
@@ -79,4 +109,43 @@ nav {
 	}
 #Productos3 div {
 	max-width: 33%;
+	}
+/*#Categorías div {
+	max-width: 33%;
+	}*/
+@media (max-width: 786px) {
+	h2 {
+	font-size: 2rem;
+	font-family: "Playfair";
+	text-align: center;
+	}
+	h3 {
+	font-size: 2rem;
+	font-family: "Playfair";	
+	}
+	.hero {
+	background-image: url("Imagenes/principal.JPG");
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:contain;
+	}
+	.imagen {
+	/* Poner imagenes a 1.6rem */
+	max-width: 100%;
+	}
+	.flexbox-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	}
+	#Productos1 div {
+	max-width: 100%;
+	}
+	#Productos2 div {
+	max-width: 100%;
+	}
+	#Productos3 div {
+	max-width: 100%;
+	}
 	}
