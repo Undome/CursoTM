@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="../css/calculadora.css">
+</head>
+<body>
+	<div class="calculadora">
+		<input type="text" id="resultado" class="resultado" disabled>
+		<div class="fila">
+			<button class="boton" onclick="agregarNumero(7);">7</button>
+			<button class="boton" onclick="agregarNumero(8);">8</button>
+			<button class="boton" onclick="agregarNumero(9);">9</button>
+			<button class="boton" onclick="agregarOperador('+');">+</button>
+		</div>
+		<div class="fila">
+			<button class="boton" onclick="agregarNumero(4);">4</button>
+			<button class="boton" onclick="agregarNumero(5);">5</button>
+			<button class="boton" onclick="agregarNumero(6);">6</button>
+			<button class="boton" onclick="agregarOperador('-');">-</button>
+		</div>
+		<div class="fila">
+			<button class="boton" onclick="agregarNumero(1);">1</button>
+			<button class="boton" onclick="agregarNumero(2);">2</button>
+			<button class="boton" onclick="agregarNumero(3);">3</button>
+			<button class="boton" onclick="agregarOperador('*');">*</button>
+		</div>
+		<div class="fila">
+			<button class="boton" onclick="agregarNumero(0);">0</button>
+			<button class="boton" onclick="limpiar();">C</button>
+			<button class="boton" onclick="calcular();">=</button>
+			<button class="boton" onclick="agregarOperador('/');">/</button>
+		</div>
+	</div>
+	<script src="../js/calculadora.js"></script>
+</body>
+</html>

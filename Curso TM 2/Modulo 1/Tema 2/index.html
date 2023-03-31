@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Juego para adivinar un número entre 1-100, con un máximo de 10 intentos.
+
+    <script>
+        var numeroSecreto = Math.floor(Math.random() * 100) + 1;
+        var maxIntentos = 10;
+        var intentos = 0;
+
+        while (intentos < maxIntentos) {
+            intentos++;
+
+            var numero = parseInt(prompt("Introduce un numero"));
+
+            if (isNaN(numero)) {
+                alert("No es un numero");
+                continue;
+            }
+
+            if (numero === numeroSecreto) {
+                alert("Felicidades!!! has ganado");
+                break;
+            } else {
+                if(numero > numeroSecreto) {
+                    console.log("Uff, te has pasado!!!");
+                } else {
+                    console.log("Ups, te quedaste bajo");
+                }
+            }
+
+            if (intentos === maxIntentos) {
+                console.log("Has perdido, no quedan mas intentos");
+            } else {
+                console.log("Has intentado " + intentos + " veces");
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
