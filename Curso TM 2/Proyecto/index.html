@@ -13,14 +13,14 @@
 			<div class="cabecero">
 				<div class="presupuesto">
 					<div class="presupuesto_titulo">
-						Presupuesto Disponible
+						<p>Presupuesto Disponible</p>
 					</div>
 					<div class="presupuesto_valor">
 						+2,000.00
 					</div>
 					<div class="presupuesto_ingreso limpiarEstilos">
 						<div class="presupuesto_ingreso--texto">
-							Ingresos
+							<p>Ingresos</p>
 						</div>
 						<div class="derecha">
 							<div class="presupuesto_ingreso--valor">
@@ -31,12 +31,11 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="presupuesto_egreso limpiarEstilos">
 						<div class="presupuesto_egreso--texto">
 							Egresos
 						</div>
-						<div class="derecha limpiarEstilo">
+						<div class="derecha limpiarEstilos">
 							<div class="presupuesto_egreso--valor">
 								-1,900.00
 							</div>
@@ -45,7 +44,6 @@
 							</div>
 						</div>
 					</div>
-				
 				</div>
 			</div>
 		</header>
@@ -53,10 +51,116 @@
 			<form id="forma">
 				<div class="agregar">
 					<div class="agregar_contenedor">
-					
+						<select id="tipo" class="agregar_tipo">
+							<option value="ingreso">+</option>
+							<option value="egreso">-</option>
+						</select>
+						<input type="text" id="descripcion" name="Agregar Descripción" class="agregar_descripcion" placeholder="Agregar Descripción">
+						<input type="number" id="valor" name="agregar valor" class="agregar_valor" placeholder="Valor" value="valor">
+						<button type="button" class="agregar_btn" onclick=""><ion-icon name="checkmark-circle-outline"></ion-icon></button>
 					</div>
 				</div>
 			</form>
+			<div class="contenedor limpiarEstilos">
+				<div class="ingreso">
+					<h2 class="ingreso_titulo">Ingresos</h2>
+					<div id="lista-ingresos">
+						<div class="elemento limpiarEstilos">
+							<div class="elemento_descripcion">
+								Salario
+							</div>
+							<div class="derecha limpiarEstilos">
+								<div class="elemento_valor">
+									+2,000.00
+								</div>
+								<div class="elemento_eliminar">
+									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+								</div>
+							</div>
+						</div>
+						<div class="elemento limpiarEstilos">
+							<div class="elemento_descripcion">
+								Venta de coche
+							</div>
+							<div class="derecha limpiarEstilos">
+								<div class="elemento_valor">
+									+1,500.00
+								</div>
+								<div class="elemento_eliminar">
+									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="egreso">
+					<h2 class="egreso_titulo">Egresos</h2>
+					<div id="lista-egresos">
+						<div class="elemento limpiarEstilos">
+							<div class="elemento_descripcion">
+								Renta departamento
+							</div>
+							<div class="derecha limpiarEstilos">
+								<div class="elemento_valor">
+									-900.00
+								</div>
+								<div class="elemento_porcentaje">
+									21%
+								</div>
+								<div class="elemento_eliminar">
+									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+								</div>
+							</div>
+						</div>
+						<div class="elemento limpiarEstilos">
+							<div class="elemento_descripcion">
+								Ropa
+							</div>
+							<div class="derecha limpiarEstilos">
+								<div class="elemento_valor">
+									-400.00
+								</div>
+								<div class="elemento_porcentaje">
+									9%
+								</div>
+								<div class="elemento_eliminar">
+									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+		<script>
+			const cargarCabecero = () => {
+				let presupuesto = totalIngresos - totalEgresos;
+				let porcentajeEgreso = totalEgresos / totalIngresos;
+			}
+			const totalIngresos = (i) => {
+				let totalIngresos = 0;
+				let ingresos = [];
+				if (i === !undefined) {
+					ingresos = i;
+				}
+				for (let j = 0; j < i.length; j++) {
+					totalIngresos += ingresos(i);
+				}
+				return totalIngresos;
+			}
+			const totalEgresos = (j) => {
+				let totalEgresos = 0;
+				let egresos = [];
+				if (j === !undefined) {
+					egresos = j;
+				}
+				for (let i = 0; i < j.length; i++) {
+					totalEgresos += egresos(j);
+				}
+				return totalEgresos;
+			}
+			
+		</script>
 	</body>
 </html>
