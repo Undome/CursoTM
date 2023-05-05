@@ -15,7 +15,7 @@
 					<div class="presupuesto_titulo">
 						<p>Presupuesto Disponible</p>
 					</div>
-					<div class="presupuesto_valor">
+					<div id="presupuesto" class="presupuesto_valor">
 						+2,000.00
 					</div>
 					<div class="presupuesto_ingreso limpiarEstilos">
@@ -23,7 +23,7 @@
 							<p>Ingresos</p>
 						</div>
 						<div class="derecha">
-							<div class="presupuesto_ingreso--valor">
+							<div id="ingresos" class="presupuesto_ingreso--valor">
 								+4,000.00
 							</div>
 							<div class="presupuesto_ingreso--porcentaje">
@@ -36,10 +36,10 @@
 							Egresos
 						</div>
 						<div class="derecha limpiarEstilos">
-							<div class="presupuesto_egreso--valor">
+							<div id="egresos" class="presupuesto_egreso--valor">
 								-1,900.00
 							</div>
-							<div class="presupuesto_egreso--porcentaje">
+							<div id="porcentaje" class="presupuesto_egreso--porcentaje">
 								45%
 							</div>
 						</div>
@@ -48,7 +48,7 @@
 			</div>
 		</header>
 		<main>
-			<form id="forma">
+			<form id="forma" onsubmit="return false">
 				<div class="agregar">
 					<div class="agregar_contenedor">
 						<select id="tipo" class="agregar_tipo">
@@ -56,8 +56,10 @@
 							<option value="egreso">-</option>
 						</select>
 						<input type="text" id="descripcion" name="Agregar Descripción" class="agregar_descripcion" placeholder="Agregar Descripción">
-						<input type="number" id="valor" name="agregar valor" class="agregar_valor" placeholder="Valor" value="valor">
-						<button type="button" class="agregar_btn" onclick=""><ion-icon name="checkmark-circle-outline"></ion-icon></button>
+						<input type="number" id="valor" name="agregar valor" class="agregar_valor" placeholder="Valor" value="0">
+						<button type="button" class="agregar_btn" onclick="agregarDato()">
+							<ion-icon name="checkmark-circle-outline"></ion-icon>
+						</button>
 					</div>
 				</div>
 			</form>
@@ -74,7 +76,7 @@
 									+2,000.00
 								</div>
 								<div class="elemento_eliminar">
-									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+									<button type="button" class="elemento_eliminar--btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
 								</div>
 							</div>
 						</div>
@@ -87,7 +89,7 @@
 									+1,500.00
 								</div>
 								<div class="elemento_eliminar">
-									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+									<button type="button" class="elemento_eliminar--btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
 								</div>
 							</div>
 						</div>
@@ -108,7 +110,7 @@
 									21%
 								</div>
 								<div class="elemento_eliminar">
-									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+									<button type="button" class="elemento_eliminar--btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
 								</div>
 							</div>
 						</div>
@@ -124,7 +126,7 @@
 									9%
 								</div>
 								<div class="elemento_eliminar">
-									<button type="button" class="elemento_eliminar_btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
+									<button type="button" class="elemento_eliminar--btn" onclick=""><ion-icon name="close-circle-outline"></ion-icon></button>
 								</div>
 							</div>
 						</div>
@@ -133,34 +135,10 @@
 			</div>
 		</main>
 		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js" type="module"></script>
-		<script>
-			const cargarCabecero = () => {
-				let presupuesto = totalIngresos - totalEgresos;
-				let porcentajeEgreso = totalEgresos / totalIngresos;
-			}
-			const totalIngresos = (i) => {
-				let totalIngresos = 0;
-				let ingresos = [];
-				if (i === !undefined) {
-					ingresos = i;
-				}
-				for (let j = 0; j < i.length; j++) {
-					totalIngresos += ingresos(i);
-				}
-				return totalIngresos;
-			}
-			const totalEgresos = (j) => {
-				let totalEgresos = 0;
-				let egresos = [];
-				if (j === !undefined) {
-					egresos = j;
-				}
-				for (let i = 0; i < j.length; i++) {
-					totalEgresos += egresos(j);
-				}
-				return totalEgresos;
-			}
-			
-		</script>
+		<script src="js/Dato.js"></script>
+		<script src="js/Ingreso.js"></script>
+		<script src="js/Egreso.js"></script>
+		<script src="js/app.js"></script>
+		<script>document.body.onload = cargarApp;</script>
 	</body>
 </html>
